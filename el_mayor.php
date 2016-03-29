@@ -27,14 +27,15 @@
 
 //HACIENDOLO SIN DECLARAR VARIABLES : 
 
-	if($_POST['elPrimero']>$_POST['elSegundo'] && $_POST['elPrimero']>$_POST['elTercero'])
+	if($_POST['elPrimero']>=$_POST['elSegundo'] && $_POST['elPrimero']>=$_POST['elTercero'])
 		$_POST['elMayor']=$_POST['elPrimero'];
-	else if($_POST['elSegundo']>$_POST['elTercero']&& $_POST['elSegundo']>$_POST['elPrimero'])
+	else if($_POST['elSegundo']>=$_POST['elTercero']&& $_POST['elSegundo']>=$_POST['elPrimero'])
 		$_POST['elMayor']=$_POST['elSegundo'];
 	else
 		$_POST['elMayor']=$_POST['elTercero'];
 
 	var_dump($_POST);
+	echo "<br>El mayor es ".$_POST['elMayor'];
 
 	 ?>
 
